@@ -1,0 +1,136 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+section {
+    margin: 5%;
+}
+
+
+/* Nav bar*/
+
+nav {
+    background-color: #beb2ff48;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    color: #080808;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #beb2ff48;
+    color: black;
+}
+
+nav a:active {
+    background-color: #BDB2FF;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+
+
+/* Fonts */
+
+h1 {
+    color: black;
+    font-weight: 900;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+#contactanos {
+    text-align: center;
+}
+
+.subtitulo {
+    color: black;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.textoSubtitulo {
+    color: rgb(207, 106, 59);
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.nombreProducto {
+    color: black;
+    font-weight: 500;
+}
+
+.precio {
+    color: rgb(226, 75, 48);
+    font-weight: 900;
+}
+
+
+/* Tablas */
+
+td img {
+    height: 20rem;
+    padding: 0.5em;
+}
+
+
+/* Productos */
+
+.imagenCarousel {
+    background-position: center;
+    width: 100%;
+}
+
+
+/* Listas */
+
+ol li {
+    color: rgb(207, 106, 59);
+}
+
+ul li {
+    color: rgb(207, 106, 59);
+    list-style-image: url(./img/iconoCrochet.png);
+}
+
+
+/* Formulario */
+
+fieldset {
+    border: none;
+    border-radius: 40px;
+    background-color: #deb887;
+    width: 800px;
+    text-align: center;
+    justify-self: center;
+    margin: auto;
+    padding: 3rem;
+}
+
+legend {
+    padding-top: 5rem;
+    color: black;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #beb2ff48;
+}

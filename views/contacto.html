@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Secular+One&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/6ff2ab6f58.js"></script>
+    <title>Contacto</title>
+</head>
+
+<body class="yarnFondo">
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="../img/yarn-ball.png" alt="Logo"></a>
+            <a href="./shop.html">Productos</a>
+            <a href="./sobreNosotros.html">Sobre nosotros</a>
+            <a href="./registrate.html"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+        </nav>
+    </header>
+    <br>
+
+    <form action="">
+        <fieldset>
+            <legend>Dejanos tu duda</legend>
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="" cols="30" rows="10" required></textarea>
+            <br>
+            <label for="consulta">¿Sobre que tema es tu consulta?</label> <br>
+            <select name="consulta" id="" required>
+                <option value="producto">Tengo una duda sobre un producto.</option>
+                <option value="comprar">Tengo una duda sobre como comprar.</option>
+                <option value="envio">Tengo una duda sobre el envio.</option>
+                <option value="facturacion">Tengo una duda sobre la facturacion.</option>
+                <option value="otro">Mi duda no esta en las anteriores.</option>
+            </select>
+            <br>
+            <br>
+            <label for="noticias">Queres recibir el Newsletter?</label>
+            <input type="checkbox" name="noticias" id="">
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <footer>
+        <a href="../views/comoComprar.html">Medios de pagos</a>
+        <a href="../views/contacto.html">Contacto</a>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Secular+One&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/6ff2ab6f58.js"></script>
+    <title>Registrate</title>
+</head>
+
+<body class="yarnFondo">
+    <header>
+        <nav>
+            <a href="../index.html"><img class="logo" src="../img/yarn-ball.png" alt="Logo"></a>
+            <a href="./shop.html">Productos</a>
+            <a href="./sobreNosotros.html">Sobre nosotros</a>
+            <a href="./registrate.html"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+        </nav>
+    </header>
+    <br>
+
+    <form action="">
+        <fieldset>
+            <legend>Formulario de compra</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="" required>
+            <br>
+            <br>
+            <label for="email">Correo electronico</label>
+            <input type="email" name="email" id="" required>
+            <br>
+            <br>
+            <label for="number">Telefono</label>
+            <input type="number" name="number" id="" required>
+            <br>
+            <br>
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="" cols="30" rows="10" required></textarea>
+            <br>
+            <br>
+            <label for="consulta">Producto</label> <br>
+            <select name="consulta" id="" required>
+                <option value="manta">Manta (invierno/verano).</option>
+                <option value="carpeta">Carpeta.</option>
+                <option value="posaplatas">Posaplatos.</option>
+                <option value="posavasos">Posavasos.</option>
+                <option value="bolso">Bolsos.</option>
+            </select>
+            <br>
+            <br>
+            <label for="pago">Medio de pago</label> <br>
+            <select name="pago" id="" required>
+                <option value="efectivo">Efectivo.</option>
+                <option value="mercadoPago">Mercado pago.</option>
+                <option value="credito">Tarjeta de crédito.</option>
+                <option value="debito">Tarjeta de debito.</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <footer>
+        <a href="../views/comoComprar.html"> Medios de pagos</a>
+        <a href="../views/contacto.html">Contacto</a>
+        <p> Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
