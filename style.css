@@ -1,5 +1,15 @@
 body {
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    display: block;
+    height: 100px;
 }
 
 section {
@@ -10,8 +20,10 @@ section {
 /* Nav bar*/
 
 nav {
-    background-color: #beb2ff48;
+    background-image: linear-gradient(to bottom, #beb2ffb9, #beb2ff00);
     overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 nav a {
@@ -41,6 +53,11 @@ a {
     height: 50px;
     width: 50px;
     object-fit: contain;
+}
+
+#user {
+    position: absolute;
+    right: 5rem;
 }
 
 
@@ -85,6 +102,7 @@ h1 {
 td img {
     height: 20rem;
     padding: 0.5em;
+    border: 1px solid #0303032d;
 }
 
 
@@ -93,6 +111,7 @@ td img {
 .imagenCarousel {
     background-position: center;
     width: 100%;
+    float: left;
 }
 
 
@@ -132,5 +151,12 @@ legend {
 /* Footer */
 
 footer {
-    background-color: #beb2ff48;
+    background-color: #beb2ff;
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    clear: both;
+    height: 100px;
 }
