@@ -24,6 +24,9 @@ nav {
     overflow: hidden;
     position: fixed;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav a {
@@ -55,11 +58,6 @@ a {
     object-fit: contain;
 }
 
-#user {
-    position: absolute;
-    right: 5rem;
-}
-
 
 /* Fonts */
 
@@ -72,6 +70,12 @@ h1 {
 
 #contactanos {
     text-align: center;
+}
+
+#loMasPedido {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2em;
 }
 
 .subtitulo {
@@ -111,7 +115,31 @@ td img {
 .imagenCarousel {
     background-position: center;
     width: 100%;
-    float: left;
+}
+
+.contenedorProducto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3rem;
+}
+
+.imgMasPedidos {
+    height: auto;
+    max-width: 600px;
+    padding: 0.5rem;
+    width: 0;
+    flex: 1 1 0;
+}
+
+.contenedorProducto div {
+    margin: 1rem;
+    padding: 2rem;
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -155,8 +183,18 @@ footer {
     padding: 20px;
     bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     position: absolute;
     clear: both;
     height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div a {
+    text-decoration: none;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 }
