@@ -101,17 +101,26 @@ h1 {
 }
 
 
-/* gid */
+/* grid */
+
+.mainProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .galeria {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 20px;
-    padding: 1em;
-    border: 1px solid #0303032d;
+    padding: 2em;
     justify-items: center;
-    background-color: chocolate;
+    background-color: #beb2ff27;
+    border-radius: 2%;
+}
+
+.galeria img {
+    border-radius: 5%;
 }
 
 
