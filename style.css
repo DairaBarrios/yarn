@@ -101,12 +101,17 @@ h1 {
 }
 
 
-/* Tablas */
+/* gid */
 
-td img {
-    height: 20rem;
-    padding: 0.5em;
+.galeria {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    padding: 1em;
     border: 1px solid #0303032d;
+    justify-items: center;
+    background-color: chocolate;
 }
 
 
