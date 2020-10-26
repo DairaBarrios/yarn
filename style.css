@@ -22,7 +22,7 @@ section {
 nav {
     background-image: linear-gradient(to bottom, #beb2ffb9, #beb2ff00);
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #beb2ff48;
+    background-color: #beb2ff65;
     color: black;
 }
 
@@ -85,7 +85,7 @@ h1 {
 }
 
 .textoSubtitulo {
-    color: rgb(207, 106, 59);
+    color: rgb(224, 105, 50);
     font-weight: 700;
     line-height: 1.6;
 }
@@ -120,7 +120,32 @@ h1 {
 }
 
 .galeria img {
-    border-radius: 5%;
+    border-radius: 25px;
+}
+
+.informacion {
+    position: relative;
+}
+
+.informacion:hover .textoEncima {
+    opacity: 1;
+}
+
+.textoEncima {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(124, 87, 167);
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 5px;
 }
 
 
@@ -144,6 +169,7 @@ h1 {
     padding: 0.5rem;
     width: 0;
     flex: 1 1 0;
+    border-radius: 2%;
 }
 
 .contenedorProducto div {
@@ -161,10 +187,12 @@ h1 {
 
 ol li {
     color: rgb(207, 106, 59);
+    font-size: 18px;
 }
 
 ul li {
     color: rgb(207, 106, 59);
+    font-size: 18px;
     list-style-image: url(./img/iconoCrochet.png);
 }
 
@@ -174,7 +202,7 @@ ul li {
 fieldset {
     border: none;
     border-radius: 40px;
-    background-color: #deb887;
+    background-color: #beb2ff81;
     width: 800px;
     text-align: center;
     justify-self: center;
@@ -193,7 +221,7 @@ legend {
 /* Footer */
 
 footer {
-    background-color: #beb2ff;
+    background-image: linear-gradient(to bottom, #fcfbff, #e0dbf8, #c3bafa, #b5a8fc, #9f8ff5);
     padding: 20px;
     bottom: 0;
     left: 0;
