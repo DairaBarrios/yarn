@@ -127,6 +127,10 @@ h1 {
     position: relative;
 }
 
+.informacion:hover {
+    z-index: 999;
+}
+
 .informacion:hover .textoEncima {
     opacity: 1;
 }
