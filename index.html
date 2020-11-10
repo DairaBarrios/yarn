@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -13,7 +16,7 @@
 
 <body>
     <header>
-        <nav>
+        <!-- <nav>
             <a href="index.html"><img class="logo" src="./img/yarn-ball.png" alt="Logo"></a>
             <div>
                 <a href="./views/shop.html">Productos</a>
@@ -22,22 +25,82 @@
                 <a href="./views/contacto.html">Contacto</a>
             </div>
             <a href="./views/registrate.html"><i  class="fa fa-user-o" aria-hidden="true"></i></a>
+        </nav>-->
+
+        <nav id="indexNav" class="navbar navbar-expand-lg fixed-top navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/yarn-ball.png" width="30" height="30" alt="Logo" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./views/shop.html">Productos <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./views/comoComprar.html">Medios de pago</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./views/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <a href="./views/registrate.html"><i  class="fa fa-user-o nav-link" aria-hidden="true"></i></a>
+                </ul>
+
+            </div>
         </nav>
+
     </header>
     <!--imagenCarousel-->
-    <img class="imagenCarousel" src="./img/carpetac.jpeg" alt="">
+    <!--<img class="imagenCarousel" src="./img/carpetac.jpeg" alt="">-->
 
-    <section>
-        <h1>Bienvenido a Yarn.</h1>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/carpetac.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carpetac.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/carpetac.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="intro">
+        <h1>Bienvenido a Yarn</h1>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur architecto adipisci consectetur sequi nesciunt blanditiis, doloremque, possimus quam delectus id odio alias eum, quae sunt maxime ad? Voluptas, molestiae neque. Lorem ipsum dolor
             sit, amet consectetur adipisicing elit. Libero laboriosam iste fugiat enim at molestias consectetur temporibus, earum esse animi, praesentium quaerat minus quisquam tenetur reprehenderit ipsam magni. Placeat, fugit.</p>
     </section>
 
-    <section>
+    <section class="loMasPedido">
         <h2 id="loMasPedido">Lo mas pedido</h2>
         <div class="contenedorProducto">
-            <div class="animate__animated animate__backInRight">
+            <div id="scrollAnimation1">
                 <h3>Manta</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum molestias nemo ipsam placeat sed saepe cum.</p>
             </div>
@@ -46,14 +109,14 @@
 
         <div class="contenedorProducto">
             <img class="imgMasPedidos" src="./img/loMasPedido/alfombra.jpg" alt="">
-            <div class="animate__animated animate__backInLeft">
+            <div id="scrollAnimation2">
                 <h3>Alfombra</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum molestias nemo ipsam placeat sed saepe cum.</p>
             </div>
         </div>
 
         <div class="contenedorProducto">
-            <div class="animate__animated animate__backInRight">
+            <div id="scrollAnimation3">
                 <h3>Pie de cama</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum molestias nemo ipsam placeat sed saepe cum.</p>
             </div>
@@ -71,6 +134,10 @@
         </div>
         <p><i class="fa fa-copyright" aria-hidden="true"></i>2020 Yarn Todos los derechos reservados.</p>
     </footer>
+
+    <script src="./js/scroll.js"></script>
+    <script src="./js/scrollAnimation.js"></script>
+
 </body>
 
 
