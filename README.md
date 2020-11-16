@@ -1,1 +1,6 @@
 # yarn
+
+Falta hacer:
+
+Mobile
+

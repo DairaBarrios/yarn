@@ -44,7 +44,7 @@
         </nav>
     </header>
     <br>
-
+    <!--
     <form action="">
         <fieldset>
             <legend>Formulario de compra</legend>
@@ -86,8 +86,55 @@
             <input type="submit" value="Enviar">
         </fieldset>
     </form>
-    <br>
-    <br>
+    -->
+    <!--Form con bootstrap-->
+
+    <form>
+        <div class="form-group">
+            <legend>Formulario de compra</legend>
+            <label for="exampleFormControlInput1">Nombre:</label>
+            <input type="nombre" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Telefono:</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Telefono">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comentario:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Dejame tu comentario</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Producto</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option disabled selected>Elegí el producto</option>
+                <option value="manta">Manta (invierno/verano).</option>
+                <option value="carpeta">Carpeta.</option>
+                <option value="posaplatas">Posaplatos.</option>
+                <option value="posavasos">Posavasos.</option>
+                <option value="bolso">Bolsos.</option>
+      </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Medio de pago</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option disabled selected>Elegí el medio de pago</option>
+                <option value="efectivo">Efectivo.</option>
+                <option value="mercadoPago">Mercado pago.</option>
+                <option value="credito">Tarjeta de crédito.</option>
+                <option value="debito">Tarjeta de debito.</option>
+      </select>
+        </div>
+        <button type="submit" class="btn btn-submit">Enviar</button>
+
+
+    </form>
+
+
     <footer>
         <div>
             <a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>

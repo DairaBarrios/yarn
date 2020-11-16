@@ -9,30 +9,6 @@ body {
 section {
   margin: 5%; }
 
-/*
-
-nav {
-    background: $nav-bar-color;
-    text-decoration: none;
-    a:hover {
-        background-color: $nav-bar-color-hover;
-        color: black;
-        border-radius: 3%;
-    }
-}
-
-.nav-link {
-    color: white!important;
-}
-
-#indexNav {
-    background: transparent;
-    a:hover {
-        background-color: $nav-bar-color-hover;
-        color: black;
-        border-radius: 3%;
-    }
-}*/
 .navbar-scroll {
   background: #9D6B53;
   text-decoration: none; }
@@ -73,12 +49,6 @@ h1 {
   padding-bottom: 1em;
   text-align: center; }
 
-/*
-.nombreProducto {
-    color: black;
-    font-weight: 500;
-}
-*/
 /* grid SHOP*/
 .mainProducts {
   display: flex;
@@ -102,6 +72,9 @@ h1 {
     z-index: 999; }
     .informacion:hover .textoEncima {
       opacity: 1; }
+  .informacion a img {
+    height: 100%;
+    width: 100%; }
 
 .textoEncima {
   position: absolute;
@@ -116,7 +89,7 @@ h1 {
   font-size: 20px;
   text-align: center;
   border-radius: 25px;
-  margin-bottom: 4px; }
+  margin-bottom: 0px; }
 
 /*Bienvenidos a Yarn*/
 .contenedor {
@@ -136,13 +109,26 @@ h1 {
   margin-bottom: 1em;
   margin-top: 5em; }
 
-/* Productos 
+/* Productos */
+.carousel .carousel-caption h5 {
+  font-weight: 900;
+  font-size: 5em;
+  text-shadow: 0 0 18px black; }
 
-.imagenCarousel {
-    background-position: center;
-    width: 100%;
-}
-*/
+.carousel .carousel-caption p {
+  font-weight: 700;
+  font-size: 2em;
+  text-shadow: 0 0 18px black; }
+
+.carousel .carousel-item {
+  height: 700px; }
+  .carousel .carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 700px; }
+
 .contenedorProducto {
   display: flex;
   flex-direction: row-reverse;
@@ -170,13 +156,6 @@ h1 {
   width: 0;
   flex: 1 1 0;
   border-radius: 3%; }
-
-.loMasPedido {
-  background-color: #e6b7a24b;
-  margin: 0;
-  margin-bottom: 1em;
-  margin-top: 5em;
-  padding: 5em; }
 
 /* Listas */
 ol {
@@ -208,6 +187,10 @@ form {
   margin: 20vh auto;
   padding: 5rem; }
 
+.custom-control {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
 /*botones*/
 .btn-submit {
   color: white;
@@ -218,6 +201,28 @@ form {
   color: white;
   background-color: #b68870;
   border-radius: 5px; }
+
+.btn-outline-submit {
+  border-color: #9D6B53;
+  color: #9D6B53; }
+  .btn-outline-submit:hover {
+    color: white;
+    background-color: #9D6B53; }
+
+.custom-control-input-rose:focus ~ .custom-control-label::before {
+  border-color: #9D6B53 !important;
+  box-shadow: 0 0 0 0.2rem #926f5e !important; }
+
+.custom-control-input-rose:checked ~ .custom-control-label::before {
+  border-color: #9D6B53 !important;
+  background-color: #9D6B53 !important; }
+
+.custom-control-input-rose:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #9D6B53 !important; }
+
+.custom-control-input-rose:not(:disabled):active ~ .custom-control-label::before {
+  background-color: #d6f5dd !important;
+  border-color: #d6f5dd !important; }
 
 /*Mobile*/
 @media (max-width: 1000px) {

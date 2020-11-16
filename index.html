@@ -46,8 +46,28 @@
 
     </header>
 
-    <!--imagenCarousel-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                         <span aria-hidden="true">&times;</span>
+                                        </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-submit" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-submit">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!--imagenCarousel-->
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -56,24 +76,40 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./img/carpetac.jpeg" class="d-block w-100" alt="...">
+                <img src="./img/carousel/grannys.jpg" class="d-block w-100" alt="grannys">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-submit" data-toggle="modal" data-target="#exampleModal">
+                            Mas información <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                              </svg>
+                    </button>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./img/carpetac.jpeg" class="d-block w-100" alt="...">
+                <img src="./img/carousel/manta.jpg" class="d-block w-100" alt="manta">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-submit" data-toggle="modal" data-target="#exampleModal">
+                        Mas información <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                          </svg>
+                </button>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./img/carpetac.jpeg" class="d-block w-100" alt="...">
+                <img src="./img/carousel/alfombra.jpg" class="d-block w-100" alt="alfombra">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-submit" data-toggle="modal" data-target="#exampleModal">
+                        Mas información <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                          </svg>
+                </button>
                 </div>
             </div>
         </div>
