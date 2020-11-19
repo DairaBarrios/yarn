@@ -11,6 +11,7 @@ section {
 
 .navbar-scroll {
   background: #9D6B53;
+  background-image: none;
   text-decoration: none; }
   .navbar-scroll a:hover {
     background-color: #CD9777;
@@ -18,7 +19,8 @@ section {
     border-radius: 3%; }
 
 .navbar-scroll--color--transparente {
-  background: transparent; }
+  background: transparent;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); }
 
 .nav-link {
   color: white !important; }
@@ -91,7 +93,7 @@ h1 {
   border-radius: 25px;
   margin-bottom: 0px; }
 
-/*Bienvenidos a Yarn*/
+/*Bienvenidos a Yarn- se usa: como comprar*/
 .contenedor {
   padding: 5em;
   margin-left: 0;
@@ -109,7 +111,7 @@ h1 {
   margin-bottom: 1em;
   margin-top: 5em; }
 
-/* Productos */
+/* Productos index */
 .carousel .carousel-caption h5 {
   font-weight: 900;
   font-size: 5em;
@@ -193,6 +195,10 @@ form {
 
 /*botones*/
 .btn-submit {
+  /* color: white;
+      background-color: #9D6B53;
+      border-radius: 5px;
+      */
   color: white;
   background-color: #9D6B53;
   border-radius: 5px; }
@@ -207,7 +213,8 @@ form {
   color: #9D6B53; }
   .btn-outline-submit:hover {
     color: white;
-    background-color: #9D6B53; }
+    background-color: #9D6B53;
+    border-radius: 0px; }
 
 .custom-control-input-rose:focus ~ .custom-control-label::before {
   border-color: #9D6B53 !important;
@@ -223,13 +230,6 @@ form {
 .custom-control-input-rose:not(:disabled):active ~ .custom-control-label::before {
   background-color: #d6f5dd !important;
   border-color: #d6f5dd !important; }
-
-/*Mobile*/
-@media (max-width: 1000px) {
-  .form {
-    width: 80vw;
-    margin: 30vh auto 35vh auto;
-    padding: 5vw; } }
 
 /* Footer*/
 footer {
@@ -249,3 +249,152 @@ footer {
     text-decoration: none;
     margin-left: 0.25rem;
     margin-right: 0.25rem; }
+
+/*Mobile*/
+@media (max-width: 1000px) {
+  /*formulario*/
+  .form {
+    width: 80vw;
+    margin: 30vh auto 35vh auto;
+    padding: 5vw; } }
+
+/*html como comprar*/
+@media (max-width: 1000px) {
+  .contenedor {
+    width: 70vw;
+    margin: 20vh auto;
+    padding: 5vw; }
+  .subtitulo {
+    color: black;
+    font-weight: 900;
+    font-size: 2em;
+    padding-bottom: 1.5em;
+    text-align: center; }
+  ol {
+    padding: 1em;
+    list-style-position: inside; }
+    ol li {
+      color: black;
+      font-size: 18px; }
+  ul {
+    padding: 1em;
+    list-style-position: inside; }
+    ul .iconosCrochet li {
+      color: black;
+      font-size: 18px;
+      list-style-image: url(../img/iconoCrochet.png);
+      text-align: center; }
+  body {
+    margin-bottom: 200px; } }
+
+@media (max-width: 550px) {
+  .contenedor {
+    width: 100%;
+    margin: 10vh 0;
+    padding: 5vw; }
+  .subtitulo {
+    color: black;
+    font-weight: 900;
+    font-size: 2em;
+    padding-bottom: 1.5em;
+    text-align: center; }
+  ol {
+    padding: 1em;
+    list-style-position: inside; }
+    ol li {
+      color: black;
+      font-size: 18px; }
+  ul {
+    padding: 1em;
+    list-style-position: inside; }
+    ul .iconosCrochet li {
+      color: black;
+      font-size: 18px;
+      list-style-image: url(../img/iconoCrochet.png);
+      text-align: center; }
+  body {
+    margin-bottom: 15vh; } }
+
+/* Producto */
+@media (max-width: 1000px) {
+  h1 {
+    color: black;
+    font-weight: 900;
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 10vh; }
+  .mainProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    padding: 2em;
+    justify-items: center;
+    background-color: #beb2ff27;
+    border-radius: 2%; }
+    .galeria img {
+      border-radius: 25px; }
+  .informacion {
+    position: relative; }
+    .informacion:hover {
+      z-index: 999; }
+      .informacion:hover .textoEncima {
+        opacity: 1; }
+    .informacion a img {
+      height: 100%;
+      width: 100%;
+      padding: 5vh; }
+  .textoEncima {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: black;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 0px; } }
+
+@media (max-width: 550px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    padding: 2em;
+    justify-items: center;
+    background-color: #beb2ff27;
+    border-radius: 2%; }
+    .galeria img {
+      border-radius: 25px; }
+  .informacion {
+    position: relative; }
+    .informacion:hover {
+      z-index: 999; }
+      .informacion:hover .textoEncima {
+        opacity: 1; }
+    .informacion a img {
+      height: 100%;
+      width: 100%; }
+  .textoEncima {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: black;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 0px; } }
+
+/*Index*/

@@ -1,313 +1,501 @@
-                    $font-stack: 'Quicksand',
-                    sans-serif;
-                    $nav-bar-color: #9D6B53;
-                    $nav-bar-color-hover: #CD9777;
-                    $galeria-color: #beb2ff27;
-                    $intro-footer-color: #bbb9b8;
-                    $maspedido-color: #e6b7a24b;
-                    html {
-                        position: relative;
-                        min-height: 100%;
-                    }
-                    
-                    body {
-                        font-family: $font-stack;
-                        margin-bottom: 100px;
-                    }
-                    
-                    section {
-                        margin: 5%;
-                    }
-                    
-                    .navbar-scroll {
-                        background: $nav-bar-color;
-                        text-decoration: none;
-                        a:hover {
-                            background-color: $nav-bar-color-hover;
-                            color: black;
-                            border-radius: 3%;
-                        }
-                    }
-                    
-                    .navbar-scroll--color--transparente {
-                        background: transparent;
-                    }
-                    
-                    .nav-link {
-                        color: white!important;
-                    }
-                    
-                    a {
-                        color: black;
-                        text-decoration: none;
-                    }
-                    /* Fonts */
-                    
-                    h1 {
-                        color: black;
-                        font-weight: 900;
-                        font-size: 3.5em;
-                        text-align: center;
-                    }
-                    
-                    #contactanos {
-                        text-align: center;
-                    }
-                    
-                    #loMasPedido {
-                        text-align: center;
-                        font-weight: 700;
-                        font-size: 2em;
-                    }
-                    
-                    .subtitulo {
-                        color: black;
-                        font-weight: 900;
-                        font-size: 3em;
-                        padding-bottom: 1em;
-                        text-align: center;
-                    }
-                    /* grid SHOP*/
-                    
-                    .mainProducts {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                    }
-                    
-                    .galeria {
-                        display: grid;
-                        grid-template-columns: 1fr 1fr 1fr;
-                        grid-row-gap: 20px;
-                        padding: 2em;
-                        justify-items: center;
-                        background-color: $galeria-color;
-                        border-radius: 2%;
-                        img {
-                            border-radius: 25px;
-                        }
-                    }
-                    
-                    .informacion {
-                        position: relative;
-                        &:hover {
-                            z-index: 999;
-                            .textoEncima {
-                                opacity: 1;
-                            }
-                        }
-                        a img {
-                            height: 100%;
-                            width: 100%;
-                        }
-                    }
-                    
-                    .textoEncima {
-                        position: absolute;
-                        left: 0;
-                        bottom: 0;
-                        background: rgb(0, 0, 0);
-                        background: rgba(0, 0, 0, 0.5);
-                        width: 100%;
-                        transition: .5s ease;
-                        opacity: 0;
-                        color: white;
-                        font-size: 20px;
-                        text-align: center;
-                        border-radius: 25px;
-                        margin-bottom: 0px;
-                    }
-                    /*Bienvenidos a Yarn*/
-                    
-                    .contenedor {
-                        padding: 5em;
-                        margin-left: 0;
-                        margin-right: 0;
-                    }
-                    
-                    .contenedor--style--intro {
-                        margin-top: 10em;
-                        margin-bottom: 10em;
-                        background-color: $intro-footer-color;
-                        p {
-                            padding: 3em;
-                        }
-                    }
-                    
-                    .contenedor--style--loMasPedido {
-                        background-color: $maspedido-color;
-                        margin-bottom: 1em;
-                        margin-top: 5em;
-                    }
-                    /* Productos */
-                    
-                    .carousel {
-                        .carousel-caption {
-                            h5 {
-                                font-weight: 900;
-                                font-size: 5em;
-                                text-shadow: 0 0 18px rgb(0, 0, 0);
-                            }
-                            p {
-                                font-weight: 700;
-                                font-size: 2em;
-                                text-shadow: 0 0 18px rgb(0, 0, 0);
-                            }
-                        }
-                        .carousel-item {
-                            height: 700px;
-                            img {
-                                position: absolute;
-                                object-fit: cover;
-                                top: 0;
-                                left: 0;
-                                min-height: 700px;
-                            }
-                        }
-                    }
-                    
-                    .contenedorProducto {
-                        display: flex;
-                        flex-direction: row-reverse;
-                        justify-content: space-evenly;
-                        margin: 3rem;
-                        div {
-                            margin: 1rem;
-                            padding: 2rem;
-                            flex: 1 1 0;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                    }
-                    
-                    .contenedorProducto__row {
-                        flex-direction: row;
-                    }
-                    
-                    .contenedorProducto__row_reverse {
-                        flex-direction: row-reverse;
-                    }
-                    
-                    .imgMasPedidos {
-                        height: auto;
-                        max-width: 600px;
-                        padding: 0.5rem;
-                        width: 0;
-                        flex: 1 1 0;
-                        border-radius: 3%;
-                    }
-                    /* Listas */
-                    
-                    ol {
-                        text-align: center;
-                        list-style-position: inside;
-                        li {
-                            color: black;
-                            font-size: 18px;
-                        }
-                    }
-                    
-                    ul {
-                        text-align: center;
-                        list-style-position: inside;
-                    }
-                    
-                    .iconosCrochet li {
-                        color: black;
-                        font-size: 18px;
-                        list-style-image: url(../img/iconoCrochet.png);
-                        text-align: center;
-                    }
-                    /* Formulario */
-                    
-                    form {
-                        border: none;
-                        border-radius: 40px;
-                        background-color: #beb2ff81;
-                        width: 800px;
-                        text-align: center;
-                        justify-content: center;
-                        align-items: center;
-                        margin: 20vh auto;
-                        padding: 5rem;
-                    }
-                    
-                    .custom-control {
-                        margin-top: 15px;
-                        margin-bottom: 15px;
-                    }
-                    /*botones*/
-                    
-                    .btn-submit {
-                        color: white;
-                        background-color: #9D6B53;
-                        border-radius: 5px;
-                    }
-                    
-                    .btn-reset {
-                        color: white;
-                        background-color: #b68870;
-                        border-radius: 5px;
-                    }
-                    
-                    .btn-outline-submit {
-                        border-color: #9D6B53;
-                        color: #9D6B53;
-                        &:hover {
-                            color: white;
-                            background-color: #9D6B53;
-                        }
-                    }
-                    
-                    .custom-control-input-rose:focus~.custom-control-label::before {
-                        border-color: #9D6B53 !important;
-                        box-shadow: 0 0 0 0.2rem #926f5e !important;
-                    }
-                    
-                    .custom-control-input-rose:checked~.custom-control-label::before {
-                        border-color: #9D6B53 !important;
-                        background-color: #9D6B53 !important;
-                    }
-                    
-                    .custom-control-input-rose:focus:not(:checked)~.custom-control-label::before {
-                        border-color: #9D6B53 !important;
-                    }
-                    
-                    .custom-control-input-rose:not(:disabled):active~.custom-control-label::before {
-                        background-color: #d6f5dd !important;
-                        border-color: #d6f5dd !important;
-                    }
-                    /*Mobile*/
-                    
-                    @media (max-width: 1000px) {
-                        .form {
-                            width: 80vw;
-                            margin: 30vh auto 35vh auto;
-                            padding: 5vw;
-                        }
-                    }
-                    /* Footer*/
-                    
-                    footer {
-                        background: $intro-footer-color;
-                        padding: 20px;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        position: absolute;
-                        clear: both;
-                        height: 100px;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        div {
-                            a {
-                                text-decoration: none;
-                                margin-left: 0.25rem;
-                                margin-right: 0.25rem;
-                            }
-                        }
-                    }
+  $font-stack: 'Quicksand',
+  sans-serif;
+  $nav-bar-color: #9D6B53;
+  $nav-bar-color-hover: #CD9777;
+  $galeria-color: #beb2ff27;
+  $intro-footer-color: #bbb9b8;
+  $maspedido-color: #e6b7a24b;
+  @mixin button ($color, $bc, $br) {
+      color: $color;
+      background-color: $bc;
+      border-radius: $br;
+  }
+  
+  @mixin fontShadow ($fw, $fs, $ts) {
+      font-weight: $fw;
+      font-size: $fs;
+      text-shadow: $ts;
+  }
+  
+  html {
+      position: relative;
+      min-height: 100%;
+  }
+  
+  body {
+      font-family: $font-stack;
+      margin-bottom: 100px;
+  }
+  
+  section {
+      margin: 5%;
+  }
+  
+  .navbar-scroll {
+      background: $nav-bar-color;
+      background-image: none;
+      text-decoration: none;
+      a:hover {
+          background-color: $nav-bar-color-hover;
+          color: black;
+          border-radius: 3%;
+      }
+  }
+  
+  .navbar-scroll--color--transparente {
+      background: transparent;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  }
+  
+  .nav-link {
+      color: white!important;
+  }
+  
+  a {
+      color: black;
+      text-decoration: none;
+  }
+  /* Fonts */
+  
+  h1 {
+      color: black;
+      font-weight: 900;
+      font-size: 3.5em;
+      text-align: center;
+  }
+  
+  #contactanos {
+      text-align: center;
+  }
+  
+  #loMasPedido {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2em;
+  }
+  
+  .subtitulo {
+      color: black;
+      font-weight: 900;
+      font-size: 3em;
+      padding-bottom: 1em;
+      text-align: center;
+  }
+  /* grid SHOP*/
+  
+  .mainProducts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  .galeria {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row-gap: 20px;
+      padding: 2em;
+      justify-items: center;
+      background-color: $galeria-color;
+      border-radius: 2%;
+      img {
+          border-radius: 25px;
+      }
+  }
+  
+  .informacion {
+      position: relative;
+      &:hover {
+          z-index: 999;
+          .textoEncima {
+              opacity: 1;
+          }
+      }
+      a img {
+          height: 100%;
+          width: 100%;
+      }
+  }
+  
+  .textoEncima {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      transition: .5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 25px;
+      margin-bottom: 0px;
+  }
+  /*Bienvenidos a Yarn- se usa: como comprar*/
+  
+  .contenedor {
+      padding: 5em;
+      margin-left: 0;
+      margin-right: 0;
+  }
+  
+  .contenedor--style--intro {
+      margin-top: 10em;
+      margin-bottom: 10em;
+      background-color: $intro-footer-color;
+      p {
+          padding: 3em;
+      }
+  }
+  
+  .contenedor--style--loMasPedido {
+      background-color: $maspedido-color;
+      margin-bottom: 1em;
+      margin-top: 5em;
+  }
+  /* Productos index */
+  
+  .carousel {
+      .carousel-caption {
+          h5 {
+              @include fontShadow(900, 5em, 0 0 18px rgb(0, 0, 0))
+          }
+          p {
+              @include fontShadow(700, 2em, 0 0 18px rgb(0, 0, 0))
+          }
+      }
+      .carousel-item {
+          height: 700px;
+          img {
+              position: absolute;
+              object-fit: cover;
+              top: 0;
+              left: 0;
+              min-height: 700px;
+          }
+      }
+  }
+  
+  .contenedorProducto {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      margin: 3rem;
+      div {
+          margin: 1rem;
+          padding: 2rem;
+          flex: 1 1 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+  }
+  
+  .contenedorProducto__row {
+      flex-direction: row;
+  }
+  
+  .contenedorProducto__row_reverse {
+      flex-direction: row-reverse;
+  }
+  
+  .imgMasPedidos {
+      height: auto;
+      max-width: 600px;
+      padding: 0.5rem;
+      width: 0;
+      flex: 1 1 0;
+      border-radius: 3%;
+  }
+  /* Listas */
+  
+  ol {
+      text-align: center;
+      list-style-position: inside;
+      li {
+          color: black;
+          font-size: 18px;
+      }
+  }
+  
+  ul {
+      text-align: center;
+      list-style-position: inside;
+  }
+  
+  .iconosCrochet li {
+      color: black;
+      font-size: 18px;
+      list-style-image: url(../img/iconoCrochet.png);
+      text-align: center;
+  }
+  /* Formulario */
+  
+  form {
+      border: none;
+      border-radius: 40px;
+      background-color: #beb2ff81;
+      width: 800px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin: 20vh auto;
+      padding: 5rem;
+  }
+  
+  .custom-control {
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+  /*botones*/
+  
+  .btn-submit {
+      /* color: white;
+      background-color: #9D6B53;
+      border-radius: 5px;
+      */
+      @include button(white, $nav-bar-color, 5px)
+  }
+  
+  .btn-reset {
+      @include button(white, #b68870, 5px)
+  }
+  
+  .btn-outline-submit {
+      border-color: $nav-bar-color;
+      color: $nav-bar-color;
+      &:hover {
+          @include button(white, $nav-bar-color, 0px)
+      }
+  }
+  
+  .custom-control-input-rose:focus~.custom-control-label::before {
+      border-color: $nav-bar-color !important;
+      box-shadow: 0 0 0 0.2rem #926f5e !important;
+  }
+  
+  .custom-control-input-rose:checked~.custom-control-label::before {
+      border-color: $nav-bar-color !important;
+      background-color: $nav-bar-color !important;
+  }
+  
+  .custom-control-input-rose:focus:not(:checked)~.custom-control-label::before {
+      border-color: $nav-bar-color !important;
+  }
+  
+  .custom-control-input-rose:not(:disabled):active~.custom-control-label::before {
+      background-color: #d6f5dd !important;
+      border-color: #d6f5dd !important;
+  }
+  /* Footer*/
+  
+  footer {
+      background: $intro-footer-color;
+      padding: 20px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      clear: both;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      div {
+          a {
+              text-decoration: none;
+              margin-left: 0.25rem;
+              margin-right: 0.25rem;
+          }
+      }
+  }
+  /*Mobile*/
+  
+  @media (max-width: 1000px) {
+      /*formulario*/
+      .form {
+          width: 80vw;
+          margin: 30vh auto 35vh auto;
+          padding: 5vw;
+      }
+  }
+  /*html como comprar*/
+  
+  @media (max-width: 1000px) {
+      .contenedor {
+          width: 70vw;
+          margin: 20vh auto;
+          padding: 5vw;
+      }
+      .subtitulo {
+          color: black;
+          font-weight: 900;
+          font-size: 2em;
+          padding-bottom: 1.5em;
+          text-align: center;
+      }
+      ol {
+          padding: 1em;
+          list-style-position: inside;
+          li {
+              color: black;
+              font-size: 18px;
+          }
+      }
+      ul {
+          padding: 1em;
+          list-style-position: inside;
+          .iconosCrochet li {
+              color: black;
+              font-size: 18px;
+              list-style-image: url(../img/iconoCrochet.png);
+              text-align: center;
+          }
+      }
+      body {
+          margin-bottom: 200px;
+      }
+  }
+  
+  @media (max-width: 550px) {
+      .contenedor {
+          width: 100%;
+          margin: 10vh 0;
+          padding: 5vw;
+      }
+      .subtitulo {
+          color: black;
+          font-weight: 900;
+          font-size: 2em;
+          padding-bottom: 1.5em;
+          text-align: center;
+      }
+      ol {
+          padding: 1em;
+          list-style-position: inside;
+          li {
+              color: black;
+              font-size: 18px;
+          }
+      }
+      ul {
+          padding: 1em;
+          list-style-position: inside;
+          .iconosCrochet li {
+              color: black;
+              font-size: 18px;
+              list-style-image: url(../img/iconoCrochet.png);
+              text-align: center;
+          }
+      }
+      body {
+          margin-bottom: 15vh;
+      }
+  }
+  /* Producto */
+  
+  @media (max-width: 1000px) {
+      h1 {
+          color: black;
+          font-weight: 900;
+          font-size: 3.5em;
+          text-align: center;
+          margin-top: 10vh;
+      }
+      .mainProducts {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+      }
+      .galeria {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-row-gap: 20px;
+          padding: 2em;
+          justify-items: center;
+          background-color: $galeria-color;
+          border-radius: 2%;
+          img {
+              border-radius: 25px;
+          }
+      }
+      .informacion {
+          position: relative;
+          &:hover {
+              z-index: 999;
+              .textoEncima {
+                  opacity: 1;
+              }
+          }
+          a img {
+              height: 100%;
+              width: 100%;
+              padding: 5vh;
+          }
+      }
+      .textoEncima {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background: rgb(0, 0, 0);
+          background: rgba(0, 0, 0, 0.5);
+          width: 100%;
+          transition: .5s ease;
+          opacity: 0;
+          color: white;
+          font-size: 20px;
+          text-align: center;
+          border-radius: 25px;
+          margin-bottom: 0px;
+      }
+  }
+  
+  @media (max-width: 550px) {
+      .galeria {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-row-gap: 20px;
+          padding: 2em;
+          justify-items: center;
+          background-color: $galeria-color;
+          border-radius: 2%;
+          img {
+              border-radius: 25px;
+          }
+      }
+      .informacion {
+          position: relative;
+          &:hover {
+              z-index: 999;
+              .textoEncima {
+                  opacity: 1;
+              }
+          }
+          a img {
+              height: 100%;
+              width: 100%;
+          }
+      }
+      .textoEncima {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background: rgb(0, 0, 0);
+          background: rgba(0, 0, 0, 0.5);
+          width: 100%;
+          transition: .5s ease;
+          opacity: 0;
+          color: white;
+          font-size: 20px;
+          text-align: center;
+          border-radius: 25px;
+          margin-bottom: 0px;
+      }
+  }
+  /*Index*/
+  
+  @media (max-width: 1000px) {}
+  
+  @media (max-width: 550px) {}
