@@ -9,6 +9,7 @@ body {
 section {
   margin: 5%; }
 
+/*navBar*/
 .navbar-scroll {
   background: #9D6B53;
   background-image: none;
@@ -28,6 +29,19 @@ section {
 a {
   color: black;
   text-decoration: none; }
+
+.navbar-title {
+  display: none; }
+  .navbar-title p {
+    margin: 0;
+    color: white !important;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 2px; }
+
+@media (max-width: 1000px) {
+  .navbar-title {
+    display: block; } }
 
 /* Fonts */
 h1 {
@@ -92,6 +106,100 @@ h1 {
   text-align: center;
   border-radius: 25px;
   margin-bottom: 0px; }
+
+@media (max-width: 1000px) {
+  h1 {
+    color: black;
+    font-weight: 900;
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 10vh; }
+  .mainProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 25px;
+    padding: 2em;
+    justify-items: center;
+    background-color: #beb2ff27;
+    border-radius: 2%; }
+    .galeria img {
+      border-radius: 25px; }
+  .informacion {
+    position: relative;
+    height: auto;
+    width: auto; }
+    .informacion:hover {
+      z-index: 999; }
+      .informacion:hover .textoEncima {
+        opacity: 1; }
+    .informacion a img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; } }
+
+.textoEncima {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 25px;
+  margin-bottom: 0px; }
+
+@media (max-width: 550px) {
+  .mainProducts {
+    margin: 0; }
+  h1 {
+    color: black;
+    font-weight: 900;
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh; }
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    justify-items: center;
+    padding: 3vh 0;
+    background-color: #beb2ff27;
+    border-radius: 0;
+    margin: 0; }
+  .informacion {
+    position: relative;
+    height: 240px;
+    width: 240px; }
+    .informacion:hover {
+      z-index: 999; }
+      .informacion:hover .textoEncima {
+        opacity: 1; }
+    .informacion a img {
+      height: 100%;
+      width: 100%; }
+  .textoEncima {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: black;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 25px;
+    margin-bottom: 0px; } }
 
 /*Bienvenidos a Yarn- se usa: como comprar*/
 .contenedor {
@@ -193,12 +301,22 @@ form {
   margin-top: 15px;
   margin-bottom: 15px; }
 
+@media (max-width: 1000px) {
+  .form {
+    width: 80vw;
+    margin: 30vh auto 35vh auto;
+    padding: 5vw; } }
+
+@media (max-width: 550px) {
+  .form {
+    width: 100vw;
+    margin: 10vh 0;
+    padding: 5vw;
+    justify-self: center;
+    align-self: center; } }
+
 /*botones*/
 .btn-submit {
-  /* color: white;
-      background-color: #9D6B53;
-      border-radius: 5px;
-      */
   color: white;
   background-color: #9D6B53;
   border-radius: 5px; }
@@ -250,14 +368,29 @@ footer {
     margin-left: 0.25rem;
     margin-right: 0.25rem; }
 
-/*Mobile*/
-@media (max-width: 1000px) {
-  /*formulario*/
-  .form {
-    width: 80vw;
-    margin: 30vh auto 35vh auto;
-    padding: 5vw; } }
+/*Mobile
 
+@media (max-width: 1000px) {
+    
+    .form {
+        width: 80vw;
+        margin: 30vh auto 35vh auto;
+        padding: 5vw;
+    }
+}
+
+@media (max-width: 550px) {
+    
+    .form {
+        width: 100vw;
+        margin: 10vh 0;
+        padding: 5vw;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+*/
 /*html como comprar*/
 @media (max-width: 1000px) {
   .contenedor {
@@ -315,86 +448,119 @@ footer {
   body {
     margin-bottom: 15vh; } }
 
-/* Producto */
+/* Producto
+
 @media (max-width: 1000px) {
-  h1 {
-    color: black;
-    font-weight: 900;
-    font-size: 3.5em;
-    text-align: center;
-    margin-top: 10vh; }
-  .mainProducts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .galeria {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 20px;
-    padding: 2em;
-    justify-items: center;
-    background-color: #beb2ff27;
-    border-radius: 2%; }
-    .galeria img {
-      border-radius: 25px; }
-  .informacion {
-    position: relative; }
-    .informacion:hover {
-      z-index: 999; }
-      .informacion:hover .textoEncima {
-        opacity: 1; }
-    .informacion a img {
-      height: 100%;
-      width: 100%;
-      padding: 5vh; }
-  .textoEncima {
+
+    h1 {
+        color: black;
+        font-weight: 900;
+        font-size: 3.5em;
+        text-align: center;
+        margin-top: 10vh;
+    }
+    .mainProducts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 25px;
+        padding: 2em;
+        justify-items: center;
+        background-color: $galeria-color;
+        border-radius: 2%;
+        img {
+            border-radius: 25px;
+        }
+    }
+    .informacion {
+        position: relative;
+        height: auto;
+        width: auto;
+        &:hover {
+            z-index: 999;
+            .textoEncima {
+                opacity: 1;
+            }
+        }
+        a img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.textoEncima {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: black;
+    background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
-    width: 100%;
+    max-width: 100%;
     transition: .5s ease;
     opacity: 0;
     color: white;
     font-size: 20px;
     text-align: center;
     border-radius: 25px;
-    margin-bottom: 0px; } }
+    margin-bottom: 0px;
+}
 
 @media (max-width: 550px) {
-  .galeria {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 20px;
-    padding: 2em;
-    justify-items: center;
-    background-color: #beb2ff27;
-    border-radius: 2%; }
-    .galeria img {
-      border-radius: 25px; }
-  .informacion {
-    position: relative; }
-    .informacion:hover {
-      z-index: 999; }
-      .informacion:hover .textoEncima {
-        opacity: 1; }
-    .informacion a img {
-      height: 100%;
-      width: 100%; }
-  .textoEncima {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: black;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    transition: .5s ease;
-    opacity: 0;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 25px;
-    margin-bottom: 0px; } }
-
-/*Index*/
+    .mainProducts {
+        margin: 0;
+    }
+    h1 {
+        color: black;
+        font-weight: 900;
+        font-size: 3.5em;
+        text-align: center;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+    .galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+        justify-items: center;
+        padding: 3vh 0;
+        background-color: $galeria-color;
+        border-radius: 0;
+        margin: 0;
+    }
+    .informacion {
+        position: relative;
+        height: 240px;
+        width: 240px;
+        &:hover {
+            z-index: 999;
+            .textoEncima {
+                opacity: 1;
+            }
+        }
+        a img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .textoEncima {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        transition: .5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 25px;
+        margin-bottom: 0px;
+    }
+}
+ */
