@@ -6,3 +6,5 @@ $(window).scroll(function() {
         $('.fixed-top').removeClass("navbar-scroll--color--transparente");
     }
 });
+
+/*scroll navBar*/

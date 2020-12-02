@@ -1,14 +1,9 @@
-/*Animacion de los textos de "los favoritos de nuestros clientes" */
+/*Animacion de Informacion de hilo y lana */
 
 $(window).scroll(function() {
-    if ($("#scrollAnimation1").isOnScreen() == true) {
-        $("#scrollAnimation1").addClass("animate__animated animate__backInLeft");
-    }
-    if ($("#scrollAnimation2").isOnScreen() == true) {
-        $("#scrollAnimation2").addClass("animate__animated animate__backInLeft");
-    }
-    if ($("#scrollAnimation3").isOnScreen() == true) {
-        $("#scrollAnimation3").addClass("animate__animated animate__backInLeft");
+    if ($("#animationHilo").isOnScreen() == true) {
+        $("#animationHilo").addClass("animate__animated")
+        $("#animationHilo").addClass("animate__fadeInUp");
     }
 });
 

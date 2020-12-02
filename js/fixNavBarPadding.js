@@ -1,0 +1,1 @@
+$("body").css({'padding-top': $('nav.navbar').height()});
