@@ -24,3 +24,7 @@ agrandar las cosas de las nav en todos los html 2/12
 
 
 2/12 se termina la pagina :) 
+
+"Se termina mobile. Se saca Lorem. Se agregan mas cosas al index. Se agrengan Modal con su respectiva informacion."
+
+6HaKToD8SdS5JPcTtqFD
